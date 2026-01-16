@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #111 0%, #000 60%);
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+}
+
+/* Main content */
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    font-size: 18px;
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+/* Team section */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 20px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.role {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
